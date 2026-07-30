@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Populate Success Card Details
             displayApptId.textContent = apptId;
             displayPatientName.textContent = nameVal;
-            displayDoctorName.textContent = "Dr. John Smith (Cardiologist)";
+            displayDoctorName.textContent = "Dr. Karthik Sundaram (Cardiologist)";
             displayApptDate.textContent = formatDate(dateVal);
             displayApptTime.textContent = timeVal;
             displayReason.textContent = isEmergency ? `[URGENT] ${reasonVal}` : reasonVal;
