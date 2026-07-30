@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CarePulse Medical Center - Schedule an appointment with Dr. John Smith, Top Cardiologist. Modern, easy online healthcare booking.">
+    <title>CarePulse Medical Center | Book Doctor Appointment</title>
+
+    <!-- Google Font: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER & NAVIGATION SECTION            -->
+    <!-- ========================================== -->
+    <header class="navbar-header" id="header">
+        <div class="container nav-container">
+            <!-- Clinic Logo & Brand Name -->
+            <a href="#home" class="logo-link" aria-label="CarePulse Home">
+                <div class="logo-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg>
+                </div>
+                <span class="logo-text">CarePulse<span class="logo-highlight">Clinic</span></span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#doctors" class="nav-link">Doctors</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#appointment" class="nav-link">Appointment</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Navigation Action Button -->
+            <div class="nav-actions">
+                <a href="#appointment" class="btn btn-primary nav-btn">Book Appointment</a>
+
+                <!-- Mobile Hamburger Menu Button -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ========================================== -->
+        <!-- 2. HERO SECTION                            -->
+        <!-- ========================================== -->
+        <section class="hero-section" id="home">
+            <div class="container hero-container">
+                <!-- Hero Content Left -->
+                <div class="hero-content fade-in">
+                    <span class="badge badge-subtle">
+                        <span class="pulse-dot green-dot"></span>
+                        Top-Rated Medical Care
+                    </span>
+                    <h1 class="hero-title">Your Health is Our Priority</h1>
+                    <p class="hero-description">
+                        Welcome to CarePulse Medical Center. We offer compassionate, world-class healthcare with top
+                        medical specialists. Book your appointment online effortlessly and take the first step towards
+                        better health today.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#appointment" class="btn btn-primary btn-lg">Book Appointment</a>
+                        <a href="#services" class="btn btn-outline btn-lg">Learn More</a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">10k+</span>
+                            <span class="stat-label">Happy Patients</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.8%</span>
+                            <span class="stat-label">Positive Feedback</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Illustration Right -->
+                <div class="hero-visual fade-in">
+                    <div class="hero-image-wrapper">
+                        <img src="hero.png" alt="Medical Consultation Illustration" class="hero-img"
+                            onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 500 400\' width=\'500\' height=\'400\'><rect width=\'100%\' height=\'100%\' rx=\'20\' fill=\'%23EFF6FF\'/><circle cx=\'250\' cy=\'160\' r=\'70\' fill=\'%232563EB\' opacity=\'0.15\'/><path d=\'M250 110 A40 40 0 0 1 250 190 A40 40 0 0 1 250 110\' fill=\'%232563EB\'/><path d=\'M170 290 C170 230 330 230 330 290\' fill=\'%231E3A8A\' opacity=\'0.8\'/><path d=\'M220 220 L280 220 M250 190 L250 250\' stroke=\'%2322C55E\' stroke-width=\'12\' stroke-linecap=\'round\'/></svg>';">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 3. ABOUT CLINIC SECTION                    -->
+        <!-- ========================================== -->
+        <section class="about-section" id="services">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">Our Excellence</span>
+                    <h2 class="section-title">Why Choose Our Clinic?</h2>
+                    <p class="section-description">We combine state-of-the-art medical technology with empathetic
+                        patient-centered care to deliver extraordinary health outcomes.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature Card 1 -->
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Experienced Doctors</h3>
+                        <p class="feature-desc">Our board-certified specialists bring decades of combined medical
+                            expertise and personalized treatment plans.</p>
+                    </div>
+
+                    <!-- Feature Card 2 -->
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">24/7 Support</h3>
+                        <p class="feature-desc">Round-the-clock emergency assistance and patient helpline to ensure
+                            you're never alone in critical moments.</p>
+                    </div>
+
+                    <!-- Feature Card 3 -->
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                <line x1="8" y1="21" x2="16" y2="21"></line>
+                                <line x1="12" y1="17" x2="12" y2="21"></line>
+                                <path d="M6 9h4M8 7v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Modern Equipment</h3>
+                        <p class="feature-desc">Equipped with advanced diagnostic tools and cutting-edge medical
+                            technology for precise, accurate testing.</p>
+                    </div>
+
+                    <!-- Feature Card 4 -->
+                    <div class="feature-card fade-in">
+                        <div class="feature-icon-box">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                                <path d="M9 16l2 2 4-4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Easy Online Booking</h3>
+                        <p class="feature-desc">Seamless online appointment scheduling in under 2 minutes with instant
+                            confirmation and reminders.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 4 & 5. DOCTOR PROFILE & BOOKING SECTION    -->
+        <!-- ========================================== -->
+        <section class="booking-section" id="appointment">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">Schedule Your Visit</span>
+                    <h2 class="section-title">Book an Appointment</h2>
+                    <p class="section-description">Select your details below to secure a consultation with our leading
+                        specialist.</p>
+                </div>
+
+                <div class="booking-grid">
+                    <!-- 4. DOCTOR PROFILE CARD -->
+                    <div class="doctor-card-wrapper fade-in" id="doctors">
+                        <article class="doctor-card">
+                            <div class="doctor-header">
+                                <div class="doctor-avatar-box">
+                                    <img src="doctor.png" alt="Dr. John Smith - Cardiologist" class="doctor-img"
+                                        onerror="this.onerror=null; this.src='data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\' viewBox=\'0 0 200 200\' width=\'200\' height=\'200\'><circle cx=\'100\' cy=\'100\' r=\'100\' fill=\'%23EFF6FF\'/><circle cx=\'100\' cy=\'75\' r=\'40\' fill=\'%232563EB\'/><path d=\'M40 170 C40 130 160 130 160 170\' fill=\'%231E3A8A\'/></svg>';">
+                                </div>
+                                <span class="badge badge-success">
+                                    <span class="pulse-dot"></span> Available Today
+                                </span>
+                            </div>
+
+                            <div class="doctor-info">
+                                <h3 class="doctor-name">Dr. John Smith</h3>
+                                <p class="doctor-spec">Cardiologist</p>
+
+                                <div class="doctor-rating" aria-label="5 out of 5 stars rating">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="rating-text">5.0 (120+ Reviews)</span>
+                                </div>
+
+                                <p class="doctor-bio">
+                                    Dr. John Smith is a renowned Cardiologist with a passion for preventative heart
+                                    care, diagnostic cardiology, and patient wellness.
+                                </p>
+
+                                <div class="doctor-details-list">
+                                    <div class="detail-item">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                            <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                                        </svg>
+                                        <span><strong>Experience:</strong> 12 Years</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                            <line x1="16" y1="2" x2="16" y2="6"></line>
+                                            <line x1="8" y1="2" x2="8" y2="6"></line>
+                                            <line x1="3" y1="10" x2="21" y2="10"></line>
+                                        </svg>
+                                        <span><strong>Working Days:</strong> Monday - Saturday</span>
+                                    </div>
+                                    <div class="detail-item">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2">
+                                            <circle cx="12" cy="12" r="10"></circle>
+                                            <polyline points="12 6 12 12 16 14"></polyline>
+                                        </svg>
+                                        <span><strong>Working Hours:</strong> 9:00 AM – 6:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <!-- 5. APPOINTMENT BOOKING FORM CARD -->
+                    <div class="booking-form-wrapper fade-in">
+                        <div class="card booking-card" id="formContainer">
+                            <div class="card-header">
+                                <h3 class="card-title">Patient Details</h3>
+                                <p class="card-subtitle">Please fill out the form below to book your appointment.</p>
+                            </div>
+
+                            <form id="appointmentForm" class="appointment-form" novalidate>
+                                <!-- Patient Name & Email (2 Cols on Desktop) -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="patientName">Patient Name <span class="required">*</span></label>
+                                        <input type="text" id="patientName" name="patientName" class="form-control"
+                                            placeholder="e.g. Sarah Jenkins">
+                                        <small class="error-msg" id="patientNameError"></small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">Email Address <span class="required">*</span></label>
+                                        <input type="email" id="email" name="email" class="form-control"
+                                            placeholder="e.g. sarah@example.com">
+                                        <small class="error-msg" id="emailError"></small>
+                                    </div>
+                                </div>
+
+                                <!-- Phone & Age (2 Cols on Desktop) -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number <span class="required">*</span></label>
+                                        <input type="tel" id="phone" name="phone" class="form-control"
+                                            placeholder="10-digit phone number" maxlength="10">
+                                        <small class="error-msg" id="phoneError"></small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="age">Age <span class="required">*</span></label>
+                                        <input type="number" id="age" name="age" class="form-control"
+                                            placeholder="1 - 120" min="1" max="120">
+                                        <small class="error-msg" id="ageError"></small>
+                                    </div>
+                                </div>
+
+                                <!-- Gender Selection -->
+                                <div class="form-group">
+                                    <label>Gender <span class="required">*</span></label>
+                                    <div class="radio-group" id="genderRadioGroup">
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Male">
+                                            <span>Male</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Female">
+                                            <span>Female</span>
+                                        </label>
+                                        <label class="radio-label">
+                                            <input type="radio" name="gender" value="Other">
+                                            <span>Other</span>
+                                        </label>
+                                    </div>
+                                    <small class="error-msg" id="genderError"></small>
+                                </div>
+
+                                <!-- Date & Time Slot -->
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="appointmentDate">Appointment Date <span
+                                                class="required">*</span></label>
+                                        <input type="date" id="appointmentDate" name="appointmentDate"
+                                            class="form-control">
+                                        <small class="error-msg" id="appointmentDateError"></small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="preferredTime">Preferred Time <span
+                                                class="required">*</span></label>
+                                        <select id="preferredTime" name="preferredTime" class="form-control">
+                                            <option value="">Select Time Slot</option>
+                                            <option value="09:00 AM">09:00 AM</option>
+                                            <option value="09:30 AM">09:30 AM</option>
+                                            <option value="10:00 AM">10:00 AM</option>
+                                            <option value="10:30 AM">10:30 AM</option>
+                                            <option value="11:00 AM">11:00 AM</option>
+                                            <option value="11:30 AM">11:30 AM</option>
+                                            <option value="12:00 PM">12:00 PM</option>
+                                            <option value="02:00 PM">02:00 PM</option>
+                                            <option value="02:30 PM">02:30 PM</option>
+                                            <option value="03:00 PM">03:00 PM</option>
+                                            <option value="03:30 PM">03:30 PM</option>
+                                            <option value="04:00 PM">04:00 PM</option>
+                                            <option value="04:30 PM">04:30 PM</option>
+                                            <option value="05:00 PM">05:00 PM</option>
+                                        </select>
+                                        <small class="error-msg" id="preferredTimeError"></small>
+                                    </div>
+                                </div>
+
+                                <!-- Reason for Visit -->
+                                <div class="form-group">
+                                    <label for="reason">Reason for Visit <span class="required">*</span></label>
+                                    <textarea id="reason" name="reason" class="form-control" rows="3"
+                                        placeholder="Briefly describe your symptoms or reason for visit..."></textarea>
+                                    <small class="error-msg" id="reasonError"></small>
+                                </div>
+
+                                <!-- Checkboxes -->
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="emergency" name="emergency">
+                                        <span>Is this an urgent medical condition? (Emergency)</span>
+                                    </label>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terms" name="terms">
+                                        <span>I agree to the <a href="#termsModal" class="link-btn">Terms &amp;
+                                                Conditions</a> and privacy policy. <span
+                                                class="required">*</span></span>
+                                    </label>
+                                    <small class="error-msg" id="termsError"></small>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="form-actions">
+                                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitBtn">
+                                        Book Appointment
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <!-- SUCCESS CARD (Initially Hidden) -->
+                        <div class="card success-card hidden" id="successCard">
+                            <div class="success-header">
+                                <div class="success-icon-wrapper">
+                                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                                        class="checkmark-icon">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                    </svg>
+                                </div>
+                                <h3 class="success-title">Appointment Booked Successfully!</h3>
+                                <p class="success-subtitle">Your appointment has been confirmed. A receipt has been
+                                    generated below.</p>
+                            </div>
+
+                            <div class="receipt-box" id="printableReceipt">
+                                <div class="receipt-header-row">
+                                    <span class="receipt-tag">Appointment Pass</span>
+                                    <span class="receipt-id" id="displayApptId">APT-20260730-4587</span>
+                                </div>
+
+                                <div class="receipt-details">
+                                    <div class="receipt-item">
+                                        <span class="receipt-label">Patient Name</span>
+                                        <span class="receipt-value" id="displayPatientName">-</span>
+                                    </div>
+                                    <div class="receipt-item">
+                                        <span class="receipt-label">Doctor Name</span>
+                                        <span class="receipt-value" id="displayDoctorName">Dr. John Smith
+                                            (Cardiologist)</span>
+                                    </div>
+                                    <div class="receipt-item">
+                                        <span class="receipt-label">Appointment Date</span>
+                                        <span class="receipt-value" id="displayApptDate">-</span>
+                                    </div>
+                                    <div class="receipt-item">
+                                        <span class="receipt-label">Appointment Time</span>
+                                        <span class="receipt-value" id="displayApptTime">-</span>
+                                    </div>
+                                    <div class="receipt-item full-width">
+                                        <span class="receipt-label">Reason for Visit</span>
+                                        <span class="receipt-value" id="displayReason">-</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="success-actions">
+                                <button type="button" class="btn btn-outline" id="bookAnotherBtn">
+                                    Book Another Appointment
+                                </button>
+                                <button type="button" class="btn btn-primary" id="printBtn">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                                        <path
+                                            d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2">
+                                        </path>
+                                        <rect x="6" y="14" width="12" height="8"></rect>
+                                    </svg>
+                                    Print Appointment
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================== -->
+        <!-- 6. CONTACT SECTION                         -->
+        <!-- ========================================== -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="section-header text-center fade-in">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Contact &amp; Location</h2>
+                    <p class="section-description">Have questions? Reach out to our front desk or visit our clinic.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Information Card -->
+                    <div class="contact-info-card fade-in">
+                        <h3 class="contact-card-title">Clinic Information</h3>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Clinic Address</h4>
+                                <p>124 Healthcare Boulevard, Suite 400<br>Medical District, NY 10001</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+18005550199">+1 (800) 555-0199</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:srishetty484@gmail.com">srishetty484@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 8:00 AM – 8:00 PM<br>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google Maps Placeholder -->
+                    <div class="map-wrapper fade-in">
+                        <div class="map-placeholder">
+                            <div class="map-pin-badge">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"
+                                    class="map-pin-icon">
+                                    <path
+                                        d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                                </svg>
+                                <span>CarePulse Clinic - NY District</span>
+                            </div>
+                            <p class="map-subtext">Interactive Map View Placeholder</p>
+                            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer"
+                                class="btn btn-outline btn-sm">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- 7. FOOTER                                  -->
+    <!-- ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand Column -->
+                <div class="footer-col brand-col">
+                    <a href="#home" class="logo-link footer-logo">
+                        <div class="logo-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg>
+                        </div>
+                        <span class="logo-text light">CarePulse<span class="logo-highlight">Clinic</span></span>
+                    </a>
+                    <p class="footer-text">Providing high-quality medical care with empathy, dedication, and clinical
+                        excellence.</p>
+                    <p class="footer-email" style="margin-top: 0.75rem; font-size: 0.9rem;"><a href="mailto:srishetty484@gmail.com" style="color: #60A5FA; text-decoration: underline;">srishetty484@gmail.com</a></p>
+                </div>
+
+                <!-- Quick Links Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#appointment">Book Appointment</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Contact Info</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:srishetty484@gmail.com">srishetty484@gmail.com</a></li>
+                        <li><a href="tel:+18005550199">+1 (800) 555-0199</a></li>
+                        <li><span>124 Healthcare Blvd, NY</span></li>
+                    </ul>
+                </div>
+
+                <!-- Social Links Column -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.5C10 7.01 11.49 5.65 13.75 5.65c1.08 0 2.21.19 2.21.19v2.43h-1.25c-1.23 0-1.61.77-1.61 1.56V12h2.74l-.44 3h-2.3v6.8c4.56-.93 8-4.96 8-9.8z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="LinkedIn">
+                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <p>&copy; 2026 CarePulse Medical Center. All Rights Reserved. Contact: <a href="mailto:srishetty484@gmail.com" style="color: #60A5FA;">srishetty484@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Button -->
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top of page">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
